@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: roboto;
+}
+
+.appContainer{
+    width: 100vw;
+    height: 100vh;
+    background: #5A1E76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer{
+    width: 500px;
+    height: 700px;
+    background: #2B0040;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    border-radius: 10px;
+}   
+
+.scores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.playerX,.playerO,.draw{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.score{
+    font-size: 40px;
+}
+
+.playerX{
+    background: #48D2FE;
+}
+
+.draw{
+    background: #BCDBF9;
+}
+
+.playerO{
+    background:#E2BE00;
+}
+
+.game{
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:20px;
+}
+
+.game div{
+    background: #43115B;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
