@@ -54,7 +54,14 @@ let getPiece = (target) => {
 let addEventsToSquares = () => {
     const square = document.querySelectorAll('.gameSquare')
     let onClick = (e) => {
-        e.target.textContent = getPiece(e.target)
+        let piece = getPiece(e.target)
+        if(piece === 'X'){
+            e.target.style.color = '#48D2FE'
+
+        }else{
+            e.target.style.color = '#E2BE00'
+        }
+        e.target.textContent = piece
     }
 
     for(let i =0; i < square.length; i++){
