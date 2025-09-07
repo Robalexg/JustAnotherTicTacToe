@@ -13,7 +13,7 @@
             <div class="scores">
                 <div class="playerX">
                     <h1>Player X</h1>
-                    <h2 class="score">0</h2>
+                    <h2 value=0 class="score">0</h2>
                 </div>
                 <div class="draw">
                     <h1>Draw</h1>
@@ -26,16 +26,25 @@
             </div>
 
             <div class="game">
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
-                <div class="gameSquare"></div>
+                <div id="0" class="gameSquare"></div>
+                <div id='1' class="gameSquare"></div>
+                <div id="2" class="gameSquare"></div>
+                <div id="3" class="gameSquare"></div>
+                <div id="4" class="gameSquare"></div>
+                <div id="5" class="gameSquare"></div>
+                <div id="6" class="gameSquare"></div>
+                <div id="7" class="gameSquare"></div>
+                <div id="8" class="gameSquare"></div>
+
+
+                <dialog class="gameOverOverlay">
+                    
+                </dialog>
             </div>
+
+            <div class="gameOverMessage"></div>
+
+            <button class="playAgainBtn">New Game</button>
         </div>
     </div>
 </body>
